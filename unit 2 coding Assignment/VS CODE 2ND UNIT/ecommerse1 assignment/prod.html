@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{
+        height:200px;
+        margin-right: 60px;
+    }
+    #container{
+        display: flex;
+    }
+    a{
+        text-decoration: none;
+        
+    }
+</style>
+<body>
+    <h1>product page</h1>
+    <div id="container"></div>
+    <a href="cart.html">go to cartpage</a>
+</body>
+</html>
+<script>
+    var products=(JSON.parse(localStorage.getItem("shoppingitems")));
+    var cart=JSON.parse(localStorage.getItem("cartItems"))||[];
+
+    displayItems(products);
+    function displayItems(produtcs){
+    products.map(function(elem){
+        var div=document.createElement("div");
+        var img=document.createElement("img");
+        img.setAttribute("src",elem.imageurl);
+        var h2=document.createElement("h2");
+        h2.textContent=elem.addname;
+        var p=document.createElement("p");
+        p.textContent=elem.addprice;
+        var button=document.createElement("button");
+        button.textContent="add to cart";
+        button.addEventListener("click",function(){
+            addtocart(elem);
+        })
+        div.append(img,h2,p,button);
+        document.querySelector("#container").append(div);
+
+    });
+}
+
+    function addtocart(elem){
+        cart.push(elem);
+        localStorage.setItem("cartItems",JSON.stringify(cart));
+    }
+  
+</script>

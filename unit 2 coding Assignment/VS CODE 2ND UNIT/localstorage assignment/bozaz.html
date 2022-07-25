@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form>input{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width:200px;
+}
+form>select{
+    width:200px;
+}
+form > input[type="submit"]{
+background-color: black;
+color: white;
+border:none;
+padding:10px 20px;
+width:200px;
+}
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+​
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+​
+th, td {
+  padding: 15px;
+}
+#filter{
+    margin-bottom: 20px;
+}
+
+#container{
+    display:flex;
+    justify-content: space-around;
+}
+
+@media only screen and (min-width:0px) and (max-width:575px){
+    #container{
+        flex-direction: column;
+    }
+}
+</style>
+<body>
+    <h1>Bozaz Product</h1>
+    <select Id="filter" onchange="filtercat()">
+        <option value="">filter by catagory</option>
+        <option value="electronics">Electronics</option>
+        <option value="furniture">furniture</option>
+        <option value="home appliance">home appliance</option>
+        <option value="books">Books</option>
+    </select>
+    <div Id="container">
+        <div>
+            <form Id="form">
+                <select Id="cat">
+                    <option value="">select catagory</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="furniture">furniture</option>
+                    <option value="homea ppliance">home appliance</option>
+                    <option value="books">Books</option>
+                </select>
+                <br>
+                <input type="text" Id="Title" placeholder="enter title">
+                <br>
+                <textarea name="" id="des" cols="30" rows="10" placeholder="enter description"></textarea>
+                <br>
+                <input type="Number" Id="price" placeholder="enter price">
+                <br>
+                <input type="submit" value="submit">
+            </form>
+        </div>
+        <div Id="display">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("#form").addEventListener("submit",formsubmit);
+       var bozazarr=JSON.parse(localStorage.getItem("bozazdata"))||[];
+       displayTable(bozazarr);
+
+       function filtercat(){
+           var selected=document.querySelector(#filter).value
+           console.log(selected);
+           var filterlist=bozazarr.filter(function(elem){
+               return elem.cat==selected;
+           });
+           //console.log(filterlist);
+           displayTable(filterlist);
+
+       }
+function formsubmit(event){
+  event.preventDefault();
+//   var cat=document.querySelector("#cat").value;
+//   var Title=document.querySelector("#Title").value;
+//   var des=document.querySelector("#desc").value;
+//   var price=document.querySelector("#price").value;
+  
+
+var bozazobj={
+    cat:form.cat.value,
+    Title:form.Title.value,
+    decription:form.desc.value,
+    price:form.price.value
+}
+
+bozazarr.push(bozazobj);
+displayTable(bozazarr);
+localStorage.setItem("bozazdata",JSON.stringify(bozazarr));
+}
+
+function displayTable(bozazarr){
+    
+    var tbody=document.querySelector("tbody");
+    tbody.textContent="";
+
+    bozazarr.map(function(elem,index){
+        var tr=document.createElement("tr");
+        var td1=document.createElement("td");
+        var td2=document.createElement("td");
+        var td3=document.createElement("td");
+        var td4=document.createElement("td");
+        var td5=document.createElement("button");
+
+        td5.addEventListener("click",function(){
+            deleterow(index);
+        });
+        
+
+        td1.textContent=elem.cat;
+        td2.textContent=elem.Title,
+        td3.textContent=elem.description,
+        td4.textContent=elem.price,
+        td5.textContent="Delete",
+        tr.append(td1,td2,td3,td4,td5);
+        tbody.append(tr);
+    });
+
+        function deleterow(index){
+        bozazarr.splice(index,1);
+        localStorage.setItem("bozazdata",JSON.stringify(bozazarr));
+        displayTable(bozazarr);
+}
+</script>

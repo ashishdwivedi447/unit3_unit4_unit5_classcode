@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    th,td{
+        border:1px solid black;
+        padding: 20px;
+    }
+</style>
+<body>
+    <h1>Todo List</h1>
+    <form Id="myform">
+    <label >Name</label>
+    <input type="text" placeholder="Enter Todo" Id="name">
+    <label>Quantity</label>
+    <input type="Number" placeholder="Enter Quantity" Id="Qty">
+    <label>Priority</label>
+    <select id="Priority">
+        <option value="--">--</option>
+        <option value="low">low</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+    </select>
+    <input type="submit" value="submit">
+    </form>
+    <table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Priority</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+</body>
+</html>
+<script>
+    document.querySelector("#myform").addEventListener("submit",addItems);
+    var arr=JSON.parse(localStorage.getItem("todolist"))||[];  // when we delete all the items then emplty array should be there that's why [] have been taken.
+    displayTable(arr);    // when we refresh the page then if we don't write this call fucntion this content which is visible on browser will be lost because display function didnt called because submit button did'nt clicked.
+
+    function addItems(event){
+      event.preventDefault();    // in form this should be visible that's why we use this default function.
+       var name=document.querySelector("#name").value;
+       var Quantity=document.querySelector("#Qty").value;
+       var Priority=document.querySelector("#Priority").value;
+
+       var todoobj={
+        ItemName:name,
+        ItemQty:Quantity,
+        ItemPriority:Priority,
+       }
+       arr.push(todoobj);
+       localStorage.setItem("todolist",JSON.stringify(arr));  // after pushing in array we string inn the local storage as well.
+       displayTable(arr); // after pushing each object to the array it is passed as argument to the this function one by one.
+    }
+    
+       function displayTable(){
+           
+        document.querySelector("tbody").innerHTML="";  // when each time we click the submit button then tbody should be empty to avoid the already present row otherwise it will show new one and previous one as well.
+
+        arr.map(function(elem,index){
+            var row=document.createElement("tr");
+
+var td1=document.createElement("td");
+td1.textContent=elem.ItemName;
+var td2=document.createElement("td");
+td2.textContent=elem.ItemQty
+var td3=document.createElement("td");
+td3.textContent=elem.ItemPriority;
+if(elem.ItemPriority=="High"){
+    td3.style.backgroundColor="red";
+}
+
+var td4=document.createElement("td");
+td4.textContent="Delete";
+
+td4.addEventListener("click",function(){
+    DeleteTask(index);
+})
+row.append(td1,td2,td3,td4);
+
+document.querySelector("tbody").append(row);
+        });
+       }
+       
+
+       function DeleteTask(index){          
+           arr.splice(index,1);           // here splice function is used to remove the particular row.  splice syntax is splice(start,deletecount) here we want to delete only one element hense deletecountis 1.
+           localStorage.setItem("todolist",JSON.stringify(arr));  // after deleting this should also store in the local storage as well that's why we again write this.
+        displayTable(arr);                      // ans to display in the dom we call again display function.                             
+       }
+    
+</script>

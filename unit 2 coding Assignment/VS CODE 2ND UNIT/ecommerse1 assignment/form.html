@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Admin page</h1>
+    <form>
+        <input type="text" id="name" placeholder="enter name of product">
+        <input type="text" id="price" placeholder="enter price">
+        <select  id="select">
+            <option value="tee">tee</option>
+            <option value="shoes">shoes</option>
+            <option value="shirt">shirt</option>
+        </select>
+        <input type="text" id="img" placeholder="enter image url">
+        <input type="submit">
+    </form>
+    <button> go to product page</button>
+      
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",addItem);
+    var prod=JSON.parse(localStorage.getItem("shoppingitems"))||[];
+    function addItem(event){
+        event.preventDefault();
+        var name=document.querySelector("#name").value;
+        var price=document.querySelector("#price").value;
+        var type=document.querySelector("#select").value;
+        var image=document.querySelector("#img").value;
+        
+        var prodobj={
+            addname:name,
+            addprice:price,
+            type:type,
+            imageurl:image,
+        };
+       prod.push(prodobj);
+       localStorage.setItem("shoppingitems",JSON.stringify(prod));
+    }
+    document.querySelector("button").addEventListener("click",function(){
+        window.location.href="prod.html";
+    })
+</script>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    th,td{
+        border:1px solid black;
+        padding: 20px;
+    }
+</style>
+<body>
+    <h1>Todo List</h1>
+    <form Id="myform">
+    <label >Name</label>
+    <input type="text" placeholder="Enter Todo" Id="name">
+    <label>Quantity</label>
+    <input type="Number" placeholder="Enter Quantity" Id="Qty">
+    <label>Priority</label>
+    <select id="Priority">
+        <option value="--">--</option>
+        <option value="low">low</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+    </select>
+    <input type="submit" value="submit">
+    </form>
+    <table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Priority</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+</body>
+</html>
+<script>
+    document.querySelector("#myform").addEventListener("submit",addItems);
+
+    function addItems(event){
+      event.preventDefault();
+       var name=document.querySelector("#name").value;
+       var Quantity=document.querySelector("#Qty").value;
+       var Priority=document.querySelector("#Priority").value;
+
+       var row=document.createElement("tr");
+
+       var td1=document.createElement("td");
+       td1.textContent=name;
+       var td2=document.createElement("td");
+       td2.textContent=Quantity
+       var td3=document.createElement("td");
+       td3.textContent=Priority;
+       if(Priority=="High"){
+           td3.style.backgroundColor="red";
+       }
+       td3.textContent=Priority
+       var td4=document.createElement("td");
+       td4.textContent="Delete";
+
+       td4.addEventListener("click",DeleteTask)
+       row.append(td1,td2,td3,td4);
+
+       document.querySelector("tbody").append(row);
+
+       function DeleteTask(event){           // when we click on delete task an event is generated .
+           event.target.parentNode.remove();    // to remove the row we have to target the parent node and add remove to remove the entiee row.
+       }
+    }
+</script>

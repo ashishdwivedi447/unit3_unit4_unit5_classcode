@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(12,40px);
+            grid-template-rows:repeat(6,80px);
+            grid-gap:20px;
+            grid-template-areas: 
+            "a a a a a a b b b e e e"
+            "c c c d d d b b b e e e"
+            ". . . . . . . . . . . ."
+            "A A A A A A B B B B B B"
+            "C C C C D D D D D D D D"
+            "E E E E E E E E E E E E"
+        }
+        .a{
+            background-color: black;
+            grid-area:a
+        }
+        .b{
+            background-color: black;
+            grid-area:b
+        }
+        .c{
+            background-color: black;
+            grid-area:c
+        }
+        .d{
+            background-color: black;
+            grid-area:d
+        }
+        .e{
+            background-color: black;
+            grid-area:e
+        }
+        .A{
+            background-color: black;
+            grid-area:A
+        }
+        .B{
+            background-color: black;
+            grid-area:B
+        }
+        .C{
+            background-color: black;
+            grid-area:C
+        }
+        .D{
+            background-color: black;
+            grid-area:D
+        }
+        .E{
+            background-color: black;
+            grid-area:E
+        }
+        .container>div{
+            color: white;
+            padding:30px;
+            border: 1px solid black;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+       <div class="container">
+           <div class="a">A</div>
+           <div class="b">B</div>
+           <div class="c">C</div>
+           <div class="d">D</div>
+           <div class="e">E</div>
+           <div class="A">A</div>
+           <div class="B">B</div>
+           <div class="C">C</div>
+           <div class="D">D</div>
+           <div class="E">E</div>
+       </div>
+</body>
+</html>

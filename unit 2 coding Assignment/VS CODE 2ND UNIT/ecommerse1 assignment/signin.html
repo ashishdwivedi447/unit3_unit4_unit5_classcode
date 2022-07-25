@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>sign page</h1>
+    <input type="text" id="email" placeholder="enter email">
+    <input type="text" id="password"  placeholder="enter password">
+    <button>Signin</button>
+</body>
+</html>
+<script>
+    document.querySelector("button").addEventListener("click",signIN);
+    var reguser=JSON.parse(localStorage.getItem("userdatabase"));
+    function signIN(){
+        var email=document.querySelector("#email").value;
+        var password=document.querySelector("#password").value;
+        if(email==="admin" && password==="admin"){
+            window.location.href="form.html";
+        }
+        else{
+            var user_founnd=false;
+            for(var i=0;i<reguser.length;i++){
+                if(reguser[i].emailadd==email && reguser[i].pass==password){
+                    user_found=true;
+                     alert("login is successful");
+                     
+                }
+            }
+            if(user_found===false){
+                alert("wrong credentials");
+            }
+            
+        }
+    }
+</script>

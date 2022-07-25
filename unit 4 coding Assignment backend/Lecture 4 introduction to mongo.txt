@@ -1,0 +1,143 @@
+> use assignment
+switched to db assignment
+> show collections
+users
+> db.users.find({}).pretty()
+{
+        "_id" : ObjectId("62282395ef60c28d56507c18"),
+        "first_name" : "ashish",
+        "last_name" : "dwivedi",
+        "email" : "lookashish272@gmail.com",
+        "gender" : "Male",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622a2a1383948440f0fc9621"),
+        "first_name" : "ashish",
+        "last_name" : "dwivedi",
+        "email" : "ad1358787@gmail.com",
+        "gender" : "male",
+        "age" : 26
+}
+{
+        "_id" : ObjectId("622a34388cb71c8e6838f668"),
+        "first_name" : "santoh",
+        "last_name" : "dwivedi",
+        "gender" : "male"
+}
+{
+        "_id" : ObjectId("622a34388cb71c8e6838f669"),
+        "first_name" : "sanjeev",
+        "last_name" : "reddy",
+        "gender" : "male"
+}
+> db.users.updateMany({},{$set:{"country":"India"}})
+{ "acknowledged" : true, "matchedCount" : 4, "modifiedCount" : 4 }
+> db.users.find({}).pretty()
+{
+        "_id" : ObjectId("62282395ef60c28d56507c18"),
+        "first_name" : "ashish",
+        "last_name" : "dwivedi",
+        "email" : "lookashish272@gmail.com",
+        "gender" : "Male",
+        "age" : 25,
+        "country" : "India"
+}
+{
+        "_id" : ObjectId("622a2a1383948440f0fc9621"),
+        "first_name" : "ashish",
+        "last_name" : "dwivedi",
+        "email" : "ad1358787@gmail.com",
+        "gender" : "male",
+        "age" : 26,
+        "country" : "India"
+}
+{
+        "_id" : ObjectId("622a34388cb71c8e6838f668"),
+        "first_name" : "santoh",
+        "last_name" : "dwivedi",
+        "gender" : "male",
+        "city" : "pune",
+        "country" : "India"
+}
+{
+        "_id" : ObjectId("622a34388cb71c8e6838f669"),
+        "first_name" : "sanjeev",
+        "last_name" : "reddy",
+        "gender" : "male",
+        "country" : "India"
+}
+> db.users.remove({"first_name":"ashish"})
+WriteResult({ "nRemoved" : 2 })
+> db.users.find({}).pretty()
+{
+        "_id" : ObjectId("622a34388cb71c8e6838f668"),
+        "first_name" : "santoh",
+        "last_name" : "dwivedi",
+        "gender" : "male",
+        "city" : "pune",
+        "country" : "India"
+}
+{
+        "_id" : ObjectId("622a34388cb71c8e6838f669"),
+        "first_name" : "sanjeev",
+        "last_name" : "reddy",
+        "gender" : "male",
+        "country" : "India"
+}
+> db.users.insert({"Name":"Raju","city":"rewa"})
+WriteResult({ "nInserted" : 1 })
+> db.users.find({}).pretty()
+{
+        "_id" : ObjectId("622a34388cb71c8e6838f668"),
+        "first_name" : "santoh",
+        "last_name" : "dwivedi",
+        "gender" : "male",
+        "city" : "pune",
+        "country" : "India"
+}
+{
+        "_id" : ObjectId("622a34388cb71c8e6838f669"),
+        "first_name" : "sanjeev",
+        "last_name" : "reddy",
+        "gender" : "male",
+        "country" : "India"
+}
+{
+        "_id" : ObjectId("622b8a7402c387ec216b138d"),
+        "Name" : "Raju",
+        "city" : "rewa"
+}
+> db.users.deleteOne({"_id":ObjectId("622a34388cb71c8e6838f668")})
+{ "acknowledged" : true, "deletedCount" : 1 }
+> db.users.find({}).pretty()
+{
+        "_id" : ObjectId("622a34388cb71c8e6838f669"),
+        "first_name" : "sanjeev",
+        "last_name" : "reddy",
+        "gender" : "male",
+        "country" : "India"
+}
+{
+        "_id" : ObjectId("622b8a7402c387ec216b138d"),
+        "Name" : "Raju",
+        "city" : "rewa"
+}
+> db.users.deleteMany({})
+{ "acknowledged" : true, "deletedCount" : 2 }
+> db.users.find({})
+> show collections
+users
+> db
+assignment
+> show dbs
+admin       0.000GB
+assignment  0.000GB
+config      0.000GB
+local       0.000GB
+> db.dropDatabase()
+{ "ok" : 1 }
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB

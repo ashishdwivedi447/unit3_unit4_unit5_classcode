@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    #container{
+        display:flex;
+        border:1px solid darkgrey;
+        width:400px;
+        margin:auto;
+        margin-top: 200px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+     #container>div>button{
+        padding:2px 5px;
+        background-color: blue;;
+        color: white;
+        font-weight: bold;;
+        border-radius: 5px;
+        padding:10px 20px;
+        border:none;
+        margin-bottom: 10px;
+    }
+    #container>div{
+        margin-left: 20px;
+    }
+</style>
+<body>
+    <div id="container">
+        
+    </div>
+    
+    
+    
+</body>
+</html>
+<script>
+    var img=document.createElement('img');
+    
+    img.setAttribute("src","https://via.placeholder.com/150x200");
+
+    var rightdiv=document.createElement('div');
+    var h1=document.createElement('h1');
+    h1.textContent="Alice Liddle"
+    var p=document.createElement('p');
+    p.textContent="Alice is a Freelanch web designer and Developer based london .she is specialized in HTML5 ,CSS3 AND Javascript and Bootstrap etc.";
+                    
+    var btn=document.createElement('button');
+    btn.textContent="View Profile";
+    
+    
+    rightdiv.append(h1,p,btn);
+    document.getElementById("container").append(img,rightdiv);
+
+</script>

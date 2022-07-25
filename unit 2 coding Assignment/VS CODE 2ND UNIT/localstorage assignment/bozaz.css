@@ -1,0 +1,15 @@
+form>input{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width:200px;
+}
+form>select{
+    width:200px;
+}
+form > input[type="submit"]{
+background-color: black;
+color: white;
+border:none;
+padding:10px 20px;
+width:200px;
+}

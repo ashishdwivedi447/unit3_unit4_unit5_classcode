@@ -1,0 +1,1337 @@
+> db.movie.find({"movie-name":{$eq:"Toothless"}}).pretty()
+{
+        "_id" : ObjectId("623215d4e8bdf600291980eb"),
+        "id" : 20,
+        "movie-name" : "Toothless",
+        "movie-gener" : "Children|Comedy",
+        "production-year" : 2006,
+        "budget" : "$9.74"
+}
+> db.movie.find({"movie-name":{$ne:"Free the Nipple"}}).pretty()
+{
+        "_id" : ObjectId("623215d4e8bdf600291980d8"),
+        "id" : 1,
+        "movie-name" : "Ra.One",
+        "movie-gener" : "Action|Musical|Sci-Fi",
+        "production-year" : 1967,
+        "budget" : "$2.21"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980d9"),
+        "id" : 2,
+        "movie-name" : "Oslo, August 31st (Oslo, 31. august)",
+        "movie-gener" : "Drama",
+        "production-year" : 1998,
+        "budget" : "$3.11"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980da"),
+        "id" : 3,
+        "movie-name" : "Spiral",
+        "movie-gener" : "Drama|Horror|Thriller",
+        "production-year" : 2010,
+        "budget" : "$1.54"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980db"),
+        "id" : 4,
+        "movie-name" : "Kung Fu Panda",
+        "movie-gener" : "Action|Animation|Children|Comedy|IMAX",
+        "production-year" : 1993,
+        "budget" : "$3.72"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980dc"),
+        "id" : 5,
+        "movie-name" : "Sublime",
+        "movie-gener" : "Horror|Thriller",
+        "production-year" : 2001,
+        "budget" : "$6.04"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980dd"),
+        "id" : 6,
+        "movie-name" : "Universal Soldier: Day of Reckoning",
+        "movie-gener" : "Action|Sci-Fi|Thriller",
+        "production-year" : 2006,
+        "budget" : "$5.01"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980de"),
+        "id" : 7,
+        "movie-name" : "Tarzan Escapes",
+        "movie-gener" : "Action|Adventure",
+        "production-year" : 1995,
+        "budget" : "$1.99"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980df"),
+        "id" : 8,
+        "movie-name" : "The Corsican Brothers",
+        "movie-gener" : "Adventure",
+        "production-year" : 1997,
+        "budget" : "$6.77"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e0"),
+        "id" : 9,
+        "movie-name" : "Hot Shots! Part Deux",
+        "movie-gener" : "Action|Comedy|War",
+        "production-year" : 1997,
+        "budget" : "$2.21"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e1"),
+        "id" : 10,
+        "movie-name" : "In Her Shoes",
+        "movie-gener" : "Comedy|Drama",
+        "production-year" : 2003,
+        "budget" : "$2.58"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e2"),
+        "id" : 11,
+        "movie-name" : "Chronicles of Narnia: The Lion, the Witch and the Wardrobe, The",
+        "movie-gener" : "Adventure|Children|Fantasy",
+        "production-year" : 2002,
+        "budget" : "$7.56"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e3"),
+        "id" : 12,
+        "movie-name" : "Bad Luck Love",
+        "movie-gener" : "Crime|Drama",
+        "production-year" : 1993,
+        "budget" : "$2.90"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e4"),
+        "id" : 13,
+        "movie-name" : "Clan of the Cave Bear, The",
+        "movie-gener" : "Adventure|Drama|Fantasy",
+        "production-year" : 2009,
+        "budget" : "$0.35"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e5"),
+        "id" : 14,
+        "movie-name" : "Titicut Follies",
+        "movie-gener" : "Documentary|Drama",
+        "production-year" : 1987,
+        "budget" : "$9.77"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e6"),
+        "id" : 15,
+        "movie-name" : "D3: The Mighty Ducks",
+        "movie-gener" : "Children|Comedy",
+        "production-year" : 1993,
+        "budget" : "$6.91"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e7"),
+        "id" : 16,
+        "movie-name" : "War Witch (Rebelle)",
+        "movie-gener" : "Drama|War",
+        "production-year" : 2000,
+        "budget" : "$0.35"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e8"),
+        "id" : 17,
+        "movie-name" : "Comedy of Innocence (Comédie de l'innocence)",
+        "movie-gener" : "Drama|Thriller",
+        "production-year" : 2007,
+        "budget" : "$1.61"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980ea"),
+        "id" : 19,
+        "movie-name" : "Russian Dolls (Les poupées russes)",
+        "movie-gener" : "Comedy|Romance",
+        "production-year" : 2011,
+        "budget" : "$0.84"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980eb"),
+        "id" : 20,
+        "movie-name" : "Toothless",
+        "movie-gener" : "Children|Comedy",
+        "production-year" : 2006,
+        "budget" : "$9.74"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980ec"),
+        "id" : 21,
+        "movie-name" : "Emigrants, The (Utvandrarna)",
+        "movie-gener" : "Drama",
+        "production-year" : 2013,
+        "budget" : "$1.37"
+> db.movie.find({"budget":{$gte:"$5"}}).pretty()
+{
+        "_id" : ObjectId("623215d4e8bdf600291980dc"),
+        "id" : 5,
+        "movie-name" : "Sublime",
+        "movie-gener" : "Horror|Thriller",
+        "production-year" : 2001,
+        "budget" : "$6.04"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980dd"),
+        "id" : 6,
+        "movie-name" : "Universal Soldier: Day of Reckoning",
+        "movie-gener" : "Action|Sci-Fi|Thriller",
+        "production-year" : 2006,
+        "budget" : "$5.01"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980df"),
+        "id" : 8,
+        "movie-name" : "The Corsican Brothers",
+        "movie-gener" : "Adventure",
+        "production-year" : 1997,
+        "budget" : "$6.77"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e2"),
+        "id" : 11,
+        "movie-name" : "Chronicles of Narnia: The Lion, the Witch and the Wardrobe, The",
+        "movie-gener" : "Adventure|Children|Fantasy",
+        "production-year" : 2002,
+        "budget" : "$7.56"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e5"),
+        "id" : 14,
+        "movie-name" : "Titicut Follies",
+        "movie-gener" : "Documentary|Drama",
+        "production-year" : 1987,
+        "budget" : "$9.77"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e6"),
+        "id" : 15,
+        "movie-name" : "D3: The Mighty Ducks",
+        "movie-gener" : "Children|Comedy",
+        "production-year" : 1993,
+        "budget" : "$6.91"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e9"),
+        "id" : 18,
+        "movie-name" : "Free the Nipple",
+        "movie-gener" : "Comedy|Drama",
+        "production-year" : 2001,
+        "budget" : "$5.64"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980eb"),
+        "id" : 20,
+        "movie-name" : "Toothless",
+        "movie-gener" : "Children|Comedy",
+        "production-year" : 2006,
+        "budget" : "$9.74"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980ed"),
+        "id" : 22,
+        "movie-name" : "You've Been Trumped",
+        "movie-gener" : "Documentary",
+        "production-year" : 1997,
+        "budget" : "$8.74"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980f0"),
+        "id" : 25,
+        "movie-name" : "Fan, The",
+        "movie-gener" : "Drama|Thriller",
+        "production-year" : 2012,
+        "budget" : "$5.21"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980f3"),
+        "id" : 28,
+        "movie-name" : "Stray Cat Rock: Sex Hunter (Nora-neko rokku: Sekkusu hanta)",
+        "movie-gener" : "Crime",
+        "production-year" : 1986,
+        "budget" : "$9.71"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980f4"),
+        "id" : 29,
+        "movie-name" : "Freddy Got Fingered",
+        "movie-gener" : "Comedy",
+        "production-year" : 1987,
+        "budget" : "$5.07"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980f5"),
+        "id" : 30,
+        "movie-name" : "Doulos, Le",
+        "movie-gener" : "Crime|Thriller",
+        "production-year" : 2009,
+        "budget" : "$8.03"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980f8"),
+        "id" : 33,
+        "movie-name" : "Number Seventeen (a.k.a. Number 17)",
+        "movie-gener" : "Thriller",
+        "production-year" : 2002,
+        "budget" : "$7.15"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980fb"),
+        "id" : 36,
+        "movie-name" : "Girls Will Be Girls",
+        "movie-gener" : "Comedy",
+        "production-year" : 2000,
+        "budget" : "$5.85"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980fd"),
+        "id" : 38,
+        "movie-name" : "Good Guys Wear Black",
+        "movie-gener" : "Action",
+        "production-year" : 2005,
+        "budget" : "$6.45"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980ff"),
+        "id" : 40,
+        "movie-name" : "Beautiful Thing",
+        "movie-gener" : "Drama|Romance",
+        "production-year" : 1999,
+        "budget" : "$6.94"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf60029198101"),
+        "id" : 42,
+        "movie-name" : "Miracle Woman, The",
+        "movie-gener" : "Drama",
+        "production-year" : 1991,
+        "budget" : "$6.35"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf60029198102"),
+        "id" : 43,
+        "movie-name" : "Not Fade Away",
+        "movie-gener" : "Drama",
+        "production-year" : 2012,
+        "budget" : "$9.49"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf60029198103"),
+        "id" : 44,
+        "movie-name" : "Crazy as Hell",
+        "movie-gener" : "Drama",
+        "production-year" : 1999,
+        "budget" : "$7.57"
+}
+> db.movie.find({"budget":{$lte:"$4"}}).pretty()
+{
+        "_id" : ObjectId("623215d4e8bdf600291980d8"),
+        "id" : 1,
+        "movie-name" : "Ra.One",
+        "movie-gener" : "Action|Musical|Sci-Fi",
+        "production-year" : 1967,
+        "budget" : "$2.21"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980d9"),
+        "id" : 2,
+        "movie-name" : "Oslo, August 31st (Oslo, 31. august)",
+        "movie-gener" : "Drama",
+        "production-year" : 1998,
+        "budget" : "$3.11"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980da"),
+        "id" : 3,
+        "movie-name" : "Spiral",
+        "movie-gener" : "Drama|Horror|Thriller",
+        "production-year" : 2010,
+        "budget" : "$1.54"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980db"),
+        "id" : 4,
+        "movie-name" : "Kung Fu Panda",
+        "movie-gener" : "Action|Animation|Children|Comedy|IMAX",
+        "production-year" : 1993,
+        "budget" : "$3.72"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980de"),
+        "id" : 7,
+        "movie-name" : "Tarzan Escapes",
+        "movie-gener" : "Action|Adventure",
+        "production-year" : 1995,
+        "budget" : "$1.99"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e0"),
+        "id" : 9,
+        "movie-name" : "Hot Shots! Part Deux",
+        "movie-gener" : "Action|Comedy|War",
+        "production-year" : 1997,
+        "budget" : "$2.21"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e1"),
+        "id" : 10,
+        "movie-name" : "In Her Shoes",
+        "movie-gener" : "Comedy|Drama",
+        "production-year" : 2003,
+        "budget" : "$2.58"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e3"),
+        "id" : 12,
+        "movie-name" : "Bad Luck Love",
+        "movie-gener" : "Crime|Drama",
+        "production-year" : 1993,
+        "budget" : "$2.90"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e4"),
+        "id" : 13,
+        "movie-name" : "Clan of the Cave Bear, The",
+        "movie-gener" : "Adventure|Drama|Fantasy",
+        "production-year" : 2009,
+        "budget" : "$0.35"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e7"),
+        "id" : 16,
+        "movie-name" : "War Witch (Rebelle)",
+        "movie-gener" : "Drama|War",
+        "production-year" : 2000,
+        "budget" : "$0.35"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e8"),
+        "id" : 17,
+        "movie-name" : "Comedy of Innocence (Comédie de l'innocence)",
+        "movie-gener" : "Drama|Thriller",
+        "production-year" : 2007,
+        "budget" : "$1.61"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980ea"),
+        "id" : 19,
+        "movie-name" : "Russian Dolls (Les poupées russes)",
+        "movie-gener" : "Comedy|Romance",
+        "production-year" : 2011,
+        "budget" : "$0.84"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980ec"),
+        "id" : 21,
+        "movie-name" : "Emigrants, The (Utvandrarna)",
+        "movie-gener" : "Drama",
+        "production-year" : 2013,
+        "budget" : "$1.37"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980ee"),
+        "id" : 23,
+        "movie-name" : "Exorcist, The",
+        "movie-gener" : "Horror|Mystery",
+        "production-year" : 2002,
+        "budget" : "$3.17"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980ef"),
+        "id" : 24,
+        "movie-name" : "Pawnbroker, The",
+        "movie-gener" : "Drama",
+        "production-year" : 1999,
+        "budget" : "$1.78"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980f1"),
+        "id" : 26,
+        "movie-name" : "Made of Honor",
+        "movie-gener" : "Comedy|Romance",
+        "production-year" : 2005,
+        "budget" : "$3.02"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980f2"),
+        "id" : 27,
+        "movie-name" : "Scarlet Letter, The",
+        "movie-gener" : "Drama|Romance",
+        "production-year" : 1994,
+        "budget" : "$3.62"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980f6"),
+        "id" : 31,
+        "movie-name" : "Dear Wendy",
+        "movie-gener" : "Drama",
+        "production-year" : 1992,
+        "budget" : "$2.70"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980f7"),
+        "id" : 32,
+        "movie-name" : "Legend of the Guardians: The Owls of Ga'Hoole",
+        "movie-gener" : "Adventure|Animation|Fantasy|IMAX",
+        "production-year" : 2000,
+        "budget" : "$3.74"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980fa"),
+        "id" : 35,
+        "movie-name" : "Fireworks Wednesday (Chaharshanbe-soori)",
+        "movie-gener" : "Drama|Mystery|Romance",
+        "production-year" : 1997,
+        "budget" : "$3.80"
+}
+> db.movie.find({$and:[{"production-year":{$gt:2000}},{"budget":{$gt:"$8"}}]}).pretty()
+{
+        "_id" : ObjectId("623215d4e8bdf600291980eb"),
+        "id" : 20,
+        "movie-name" : "Toothless",
+        "movie-gener" : "Children|Comedy",
+        "production-year" : 2006,
+        "budget" : "$9.74"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980f5"),
+        "id" : 30,
+        "movie-name" : "Doulos, Le",
+        "movie-gener" : "Crime|Thriller",
+        "production-year" : 2009,
+        "budget" : "$8.03"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf60029198102"),
+        "id" : 43,
+        "movie-name" : "Not Fade Away",
+        "movie-gener" : "Drama",
+        "production-year" : 2012,
+        "budget" : "$9.49"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf60029198106"),
+        "id" : 47,
+        "movie-name" : "Benjamin Blümchen - Seine schönsten Abenteuer",
+        "movie-gener" : "(no genres listed)",
+        "production-year" : 2008,
+        "budget" : "$8.99"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf60029198117"),
+        "id" : 64,
+        "movie-name" : "Commandos Strike at Dawn",
+        "movie-gener" : "Drama|War",
+        "production-year" : 2009,
+        "budget" : "$8.42"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf60029198122"),
+        "id" : 75,
+        "movie-name" : "Through the Olive Trees (Zire darakhatan zeyton)",
+        "movie-gener" : "Drama",
+        "production-year" : 2002,
+        "budget" : "$8.60"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf60029198129"),
+        "id" : 82,
+        "movie-name" : "Delhi-6",
+        "movie-gener" : "Comedy|Crime|Drama",
+        "production-year" : 2007,
+        "budget" : "$9.78"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf6002919812a"),
+        "id" : 83,
+        "movie-name" : "Teen Witch",
+        "movie-gener" : "Comedy",
+        "production-year" : 2004,
+        "budget" : "$9.15"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf6002919812f"),
+        "id" : 88,
+        "movie-name" : "Yamla Pagla Deewana 2",
+        "movie-gener" : "Action|Comedy|Drama",
+        "production-year" : 2007,
+        "budget" : "$8.51"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf60029198133"),
+        "id" : 92,
+        "movie-name" : "Swing Vote",
+        "movie-gener" : "Comedy|Drama",
+        "production-year" : 2012,
+        "budget" : "$8.73"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf60029198145"),
+        "id" : 110,
+        "movie-name" : "This Special Friendship (Les amitiés particulières)",
+        "movie-gener" : "Drama",
+        "production-year" : 2008,
+        "budget" : "$8.86"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf60029198152"),
+        "id" : 123,
+        "movie-name" : "Resident, The",
+        "movie-gener" : "Drama|Horror|Thriller",
+        "production-year" : 2012,
+        "budget" : "$8.34"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf6002919815a"),
+        "id" : 131,
+        "movie-name" : "Hatchet III",
+        "movie-gener" : "Comedy|Horror",
+        "production-year" : 2012,
+        "budget" : "$9.05"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf60029198161"),
+        "id" : 138,
+        "movie-name" : "Solas",
+        "movie-gener" : "Drama",
+        "production-year" : 2006,
+        "budget" : "$8.12"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf6002919816a"),
+        "id" : 147,
+        "movie-name" : "Education of Little Tree, The",
+        "movie-gener" : "Drama",
+        "production-year" : 2008,
+        "budget" : "$9.93"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf6002919816f"),
+        "id" : 152,
+        "movie-name" : "American in Paris, An",
+        "movie-gener" : "Musical|Romance",
+        "production-year" : 2009,
+        "budget" : "$8.34"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf60029198177"),
+        "id" : 160,
+        "movie-name" : "Other Dream Team, The",
+        "movie-gener" : "Documentary",
+        "production-year" : 2002,
+        "budget" : "$9.47"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf6002919817f"),
+        "id" : 168,
+        "movie-name" : "Good Earth, The",
+        "movie-gener" : "Drama",
+        "production-year" : 2009,
+        "budget" : "$8.23"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf60029198187"),
+        "id" : 176,
+        "movie-name" : "Looking for Richard",
+        "movie-gener" : "Documentary|Drama",
+        "production-year" : 2001,
+        "budget" : "$9.60"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf60029198199"),
+        "id" : 194,
+        "movie-name" : "Birds of America",
+        "movie-gener" : "Comedy|Drama",
+        "production-year" : 2005,
+        "budget" : "$9.57"
+}
+>  db.movie.find({$or:[{"production-year":{$gt:2000}},{"budget":{$gt:"$8"}}]}).pretty()
+{
+        "_id" : ObjectId("623215d4e8bdf600291980da"),
+        "id" : 3,
+        "movie-name" : "Spiral",
+        "movie-gener" : "Drama|Horror|Thriller",
+        "production-year" : 2010,
+        "budget" : "$1.54"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980dc"),
+        "id" : 5,
+        "movie-name" : "Sublime",
+        "movie-gener" : "Horror|Thriller",
+        "production-year" : 2001,
+        "budget" : "$6.04"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980dd"),
+        "id" : 6,
+        "movie-name" : "Universal Soldier: Day of Reckoning",
+        "movie-gener" : "Action|Sci-Fi|Thriller",
+        "production-year" : 2006,
+        "budget" : "$5.01"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e1"),
+        "id" : 10,
+        "movie-name" : "In Her Shoes",
+        "movie-gener" : "Comedy|Drama",
+        "production-year" : 2003,
+        "budget" : "$2.58"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e2"),
+        "id" : 11,
+        "movie-name" : "Chronicles of Narnia: The Lion, the Witch and the Wardrobe, The",
+        "movie-gener" : "Adventure|Children|Fantasy",
+        "production-year" : 2002,
+        "budget" : "$7.56"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e4"),
+        "id" : 13,
+        "movie-name" : "Clan of the Cave Bear, The",
+        "movie-gener" : "Adventure|Drama|Fantasy",
+        "production-year" : 2009,
+        "budget" : "$0.35"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e5"),
+        "id" : 14,
+        "movie-name" : "Titicut Follies",
+        "movie-gener" : "Documentary|Drama",
+        "production-year" : 1987,
+        "budget" : "$9.77"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e8"),
+        "id" : 17,
+        "movie-name" : "Comedy of Innocence (Comédie de l'innocence)",
+        "movie-gener" : "Drama|Thriller",
+        "production-year" : 2007,
+        "budget" : "$1.61"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e9"),
+        "id" : 18,
+        "movie-name" : "Free the Nipple",
+        "movie-gener" : "Comedy|Drama",
+        "production-year" : 2001,
+        "budget" : "$5.64"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980ea"),
+        "id" : 19,
+        "movie-name" : "Russian Dolls (Les poupées russes)",
+        "movie-gener" : "Comedy|Romance",
+        "production-year" : 2011,
+        "budget" : "$0.84"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980eb"),
+        "id" : 20,
+        "movie-name" : "Toothless",
+        "movie-gener" : "Children|Comedy",
+        "production-year" : 2006,
+        "budget" : "$9.74"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980ec"),
+        "id" : 21,
+        "movie-name" : "Emigrants, The (Utvandrarna)",
+        "movie-gener" : "Drama",
+        "production-year" : 2013,
+        "budget" : "$1.37"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980ed"),
+        "id" : 22,
+        "movie-name" : "You've Been Trumped",
+        "movie-gener" : "Documentary",
+        "production-year" : 1997,
+        "budget" : "$8.74"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980ee"),
+        "id" : 23,
+        "movie-name" : "Exorcist, The",
+        "movie-gener" : "Horror|Mystery",
+        "production-year" : 2002,
+        "budget" : "$3.17"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980f0"),
+        "id" : 25,
+        "movie-name" : "Fan, The",
+        "movie-gener" : "Drama|Thriller",
+        "production-year" : 2012,
+        "budget" : "$5.21"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980f1"),
+        "id" : 26,
+        "movie-name" : "Made of Honor",
+        "movie-gener" : "Comedy|Romance",
+        "production-year" : 2005,
+        "budget" : "$3.02"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980f3"),
+        "id" : 28,
+        "movie-name" : "Stray Cat Rock: Sex Hunter (Nora-neko rokku: Sekkusu hanta)",
+        "movie-gener" : "Crime",
+        "production-year" : 1986,
+        "budget" : "$9.71"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980f5"),
+        "id" : 30,
+        "movie-name" : "Doulos, Le",
+        "movie-gener" : "Crime|Thriller",
+        "production-year" : 2009,
+        "budget" : "$8.03"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980f8"),
+        "id" : 33,
+        "movie-name" : "Number Seventeen (a.k.a. Number 17)",
+        "movie-gener" : "Thriller",
+        "production-year" : 2002,
+        "budget" : "$7.15"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980f9"),
+        "id" : 34,
+        "movie-name" : "Cleanskin",
+        "movie-gener" : "Crime|Drama|Thriller",
+        "production-year" : 2011,
+        "budget" : "$4.65"
+}
+ db.movie.find({$nor:[{"production-year":{$gt:2000}},{"budget":{$gt:"$8"}}]}).pretty()
+{
+        "_id" : ObjectId("623215d4e8bdf600291980d8"),
+        "id" : 1,
+        "movie-name" : "Ra.One",
+        "movie-gener" : "Action|Musical|Sci-Fi",
+        "production-year" : 1967,
+        "budget" : "$2.21"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980d9"),
+        "id" : 2,
+        "movie-name" : "Oslo, August 31st (Oslo, 31. august)",
+        "movie-gener" : "Drama",
+        "production-year" : 1998,
+        "budget" : "$3.11"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980db"),
+        "id" : 4,
+        "movie-name" : "Kung Fu Panda",
+        "movie-gener" : "Action|Animation|Children|Comedy|IMAX",
+        "production-year" : 1993,
+        "budget" : "$3.72"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980de"),
+        "id" : 7,
+        "movie-name" : "Tarzan Escapes",
+        "movie-gener" : "Action|Adventure",
+        "production-year" : 1995,
+        "budget" : "$1.99"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980df"),
+        "id" : 8,
+        "movie-name" : "The Corsican Brothers",
+        "movie-gener" : "Adventure",
+        "production-year" : 1997,
+        "budget" : "$6.77"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e0"),
+        "id" : 9,
+        "movie-name" : "Hot Shots! Part Deux",
+        "movie-gener" : "Action|Comedy|War",
+        "production-year" : 1997,
+        "budget" : "$2.21"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e3"),
+        "id" : 12,
+        "movie-name" : "Bad Luck Love",
+        "movie-gener" : "Crime|Drama",
+        "production-year" : 1993,
+        "budget" : "$2.90"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e6"),
+        "id" : 15,
+        "movie-name" : "D3: The Mighty Ducks",
+        "movie-gener" : "Children|Comedy",
+        "production-year" : 1993,
+        "budget" : "$6.91"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e7"),
+        "id" : 16,
+        "movie-name" : "War Witch (Rebelle)",
+        "movie-gener" : "Drama|War",
+        "production-year" : 2000,
+        "budget" : "$0.35"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980ef"),
+        "id" : 24,
+        "movie-name" : "Pawnbroker, The",
+        "movie-gener" : "Drama",
+        "production-year" : 1999,
+        "budget" : "$1.78"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980f2"),
+        "id" : 27,
+        "movie-name" : "Scarlet Letter, The",
+        "movie-gener" : "Drama|Romance",
+        "production-year" : 1994,
+        "budget" : "$3.62"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980f4"),
+        "id" : 29,
+        "movie-name" : "Freddy Got Fingered",
+        "movie-gener" : "Comedy",
+        "production-year" : 1987,
+        "budget" : "$5.07"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980f6"),
+        "id" : 31,
+        "movie-name" : "Dear Wendy",
+        "movie-gener" : "Drama",
+        "production-year" : 1992,
+        "budget" : "$2.70"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980f7"),
+        "id" : 32,
+        "movie-name" : "Legend of the Guardians: The Owls of Ga'Hoole",
+        "movie-gener" : "Adventure|Animation|Fantasy|IMAX",
+        "production-year" : 2000,
+        "budget" : "$3.74"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980fa"),
+        "id" : 35,
+        "movie-name" : "Fireworks Wednesday (Chaharshanbe-soori)",
+        "movie-gener" : "Drama|Mystery|Romance",
+        "production-year" : 1997,
+        "budget" : "$3.80"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980fb"),
+        "id" : 36,
+        "movie-name" : "Girls Will Be Girls",
+        "movie-gener" : "Comedy",
+        "production-year" : 2000,
+        "budget" : "$5.85"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980ff"),
+        "id" : 40,
+        "movie-name" : "Beautiful Thing",
+        "movie-gener" : "Drama|Romance",
+        "production-year" : 1999,
+        "budget" : "$6.94"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf60029198100"),
+        "id" : 41,
+        "movie-name" : "Zorn's Lemma",
+        "movie-gener" : "Drama",
+        "production-year" : 2000,
+        "budget" : "$4.58"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf60029198101"),
+        "id" : 42,
+        "movie-name" : "Miracle Woman, The",
+        "movie-gener" : "Drama",
+        "production-year" : 1991,
+        "budget" : "$6.35"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf60029198103"),
+        "id" : 44,
+        "movie-name" : "Crazy as Hell",
+        "movie-gener" : "Drama",
+        "production-year" : 1999,
+        "budget" : "$7.57"
+}
+  db.movie.find({$and:[{"production-year":{$ne:2000}},{"budget":{$ne:"$9"}}]}).pretty()
+{
+        "_id" : ObjectId("623215d4e8bdf600291980d8"),
+        "id" : 1,
+        "movie-name" : "Ra.One",
+        "movie-gener" : "Action|Musical|Sci-Fi",
+        "production-year" : 1967,
+        "budget" : "$2.21"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980d9"),
+        "id" : 2,
+        "movie-name" : "Oslo, August 31st (Oslo, 31. august)",
+        "movie-gener" : "Drama",
+        "production-year" : 1998,
+        "budget" : "$3.11"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980da"),
+        "id" : 3,
+        "movie-name" : "Spiral",
+        "movie-gener" : "Drama|Horror|Thriller",
+        "production-year" : 2010,
+        "budget" : "$1.54"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980db"),
+        "id" : 4,
+        "movie-name" : "Kung Fu Panda",
+        "movie-gener" : "Action|Animation|Children|Comedy|IMAX",
+        "production-year" : 1993,
+        "budget" : "$3.72"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980dc"),
+        "id" : 5,
+        "movie-name" : "Sublime",
+        "movie-gener" : "Horror|Thriller",
+        "production-year" : 2001,
+        "budget" : "$6.04"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980dd"),
+        "id" : 6,
+        "movie-name" : "Universal Soldier: Day of Reckoning",
+        "movie-gener" : "Action|Sci-Fi|Thriller",
+        "production-year" : 2006,
+        "budget" : "$5.01"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980de"),
+        "id" : 7,
+        "movie-name" : "Tarzan Escapes",
+        "movie-gener" : "Action|Adventure",
+        "production-year" : 1995,
+        "budget" : "$1.99"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980df"),
+        "id" : 8,
+        "movie-name" : "The Corsican Brothers",
+        "movie-gener" : "Adventure",
+        "production-year" : 1997,
+        "budget" : "$6.77"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e0"),
+        "id" : 9,
+        "movie-name" : "Hot Shots! Part Deux",
+        "movie-gener" : "Action|Comedy|War",
+        "production-year" : 1997,
+        "budget" : "$2.21"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e1"),
+        "id" : 10,
+        "movie-name" : "In Her Shoes",
+        "movie-gener" : "Comedy|Drama",
+        "production-year" : 2003,
+        "budget" : "$2.58"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e2"),
+        "id" : 11,
+        "movie-name" : "Chronicles of Narnia: The Lion, the Witch and the Wardrobe, The",
+        "movie-gener" : "Adventure|Children|Fantasy",
+        "production-year" : 2002,
+        "budget" : "$7.56"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e3"),
+        "id" : 12,
+        "movie-name" : "Bad Luck Love",
+        "movie-gener" : "Crime|Drama",
+        "production-year" : 1993,
+        "budget" : "$2.90"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e4"),
+        "id" : 13,
+        "movie-name" : "Clan of the Cave Bear, The",
+        "movie-gener" : "Adventure|Drama|Fantasy",
+        "production-year" : 2009,
+        "budget" : "$0.35"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e5"),
+        "id" : 14,
+        "movie-name" : "Titicut Follies",
+        "movie-gener" : "Documentary|Drama",
+        "production-year" : 1987,
+        "budget" : "$9.77"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e6"),
+        "id" : 15,
+        "movie-name" : "D3: The Mighty Ducks",
+        "movie-gener" : "Children|Comedy",
+        "production-year" : 1993,
+        "budget" : "$6.91"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e8"),
+        "id" : 17,
+        "movie-name" : "Comedy of Innocence (Comédie de l'innocence)",
+        "movie-gener" : "Drama|Thriller",
+        "production-year" : 2007,
+        "budget" : "$1.61"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e9"),
+        "id" : 18,
+        "movie-name" : "Free the Nipple",
+        "movie-gener" : "Comedy|Drama",
+        "production-year" : 2001,
+        "budget" : "$5.64"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980ea"),
+        "id" : 19,
+        "movie-name" : "Russian Dolls (Les poupées russes)",
+        "movie-gener" : "Comedy|Romance",
+        "production-year" : 2011,
+        "budget" : "$0.84"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980eb"),
+        "id" : 20,
+        "movie-name" : "Toothless",
+        "movie-gener" : "Children|Comedy",
+        "production-year" : 2006,
+        "budget" : "$9.74"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980ec"),
+        "id" : 21,
+        "movie-name" : "Emigrants, The (Utvandrarna)",
+        "movie-gener" : "Drama",
+        "production-year" : 2013,
+        "budget" : "$1.37"
+}
+> db.movie.find({$and:[{"production-year":{$gte:2000}},{"production-year":{$lte:2010}}]}).pretty()
+{
+        "_id" : ObjectId("623215d4e8bdf600291980da"),
+        "id" : 3,
+        "movie-name" : "Spiral",
+        "movie-gener" : "Drama|Horror|Thriller",
+        "production-year" : 2010,
+        "budget" : "$1.54"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980dc"),
+        "id" : 5,
+        "movie-name" : "Sublime",
+        "movie-gener" : "Horror|Thriller",
+        "production-year" : 2001,
+        "budget" : "$6.04"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980dd"),
+        "id" : 6,
+        "movie-name" : "Universal Soldier: Day of Reckoning",
+        "movie-gener" : "Action|Sci-Fi|Thriller",
+        "production-year" : 2006,
+        "budget" : "$5.01"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e1"),
+        "id" : 10,
+        "movie-name" : "In Her Shoes",
+        "movie-gener" : "Comedy|Drama",
+        "production-year" : 2003,
+        "budget" : "$2.58"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e2"),
+        "id" : 11,
+        "movie-name" : "Chronicles of Narnia: The Lion, the Witch and the Wardrobe, The",
+        "movie-gener" : "Adventure|Children|Fantasy",
+        "production-year" : 2002,
+        "budget" : "$7.56"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e4"),
+        "id" : 13,
+        "movie-name" : "Clan of the Cave Bear, The",
+        "movie-gener" : "Adventure|Drama|Fantasy",
+        "production-year" : 2009,
+        "budget" : "$0.35"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e7"),
+        "id" : 16,
+        "movie-name" : "War Witch (Rebelle)",
+        "movie-gener" : "Drama|War",
+        "production-year" : 2000,
+        "budget" : "$0.35"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e8"),
+        "id" : 17,
+        "movie-name" : "Comedy of Innocence (Comédie de l'innocence)",
+        "movie-gener" : "Drama|Thriller",
+        "production-year" : 2007,
+        "budget" : "$1.61"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e9"),
+        "id" : 18,
+        "movie-name" : "Free the Nipple",
+        "movie-gener" : "Comedy|Drama",
+        "production-year" : 2001,
+        "budget" : "$5.64"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980eb"),
+        "id" : 20,
+        "movie-name" : "Toothless",
+        "movie-gener" : "Children|Comedy",
+        "production-year" : 2006,
+        "budget" : "$9.74"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980ee"),
+        "id" : 23,
+        "movie-name" : "Exorcist, The",
+        "movie-gener" : "Horror|Mystery",
+        "production-year" : 2002,
+        "budget" : "$3.17"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980f1"),
+        "id" : 26,
+        "movie-name" : "Made of Honor",
+        "movie-gener" : "Comedy|Romance",
+        "production-year" : 2005,
+        "budget" : "$3.02"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980f5"),
+        "id" : 30,
+        "movie-name" : "Doulos, Le",
+        "movie-gener" : "Crime|Thriller",
+        "production-year" : 2009,
+        "budget" : "$8.03"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980f7"),
+        "id" : 32,
+        "movie-name" : "Legend of the Guardians: The Owls of Ga'Hoole",
+        "movie-gener" : "Adventure|Animation|Fantasy|IMAX",
+        "production-year" : 2000,
+        "budget" : "$3.74"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980f8"),
+        "id" : 33,
+        "movie-name" : "Number Seventeen (a.k.a. Number 17)",
+        "movie-gener" : "Thriller",
+        "production-year" : 2002,
+        "budget" : "$7.15"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980fb"),
+        "id" : 36,
+        "movie-name" : "Girls Will Be Girls",
+        "movie-gener" : "Comedy",
+        "production-year" : 2000,
+        "budget" : "$5.85"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980fc"),
+        "id" : 37,
+        "movie-name" : "Corto Maltese in Siberia (Corto Maltese - La cour secrète des Arcanes)",
+        "movie-gener" : "Adventure|Animation|Drama|Romance|War",
+        "production-year" : 2007,
+        "budget" : "$2.78"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980fd"),
+        "id" : 38,
+        "movie-name" : "Good Guys Wear Black",
+        "movie-gener" : "Action",
+        "production-year" : 2005,
+        "budget" : "$6.45"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980fe"),
+        "id" : 39,
+        "movie-name" : "Breaking and Entering",
+        "movie-gener" : "Drama",
+        "production-year" : 2006,
+        "budget" : "$2.76"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf60029198100"),
+        "id" : 41,
+        "movie-name" : "Zorn's Lemma",
+        "movie-gener" : "Drama",
+        "production-year" : 2000,
+        "budget" : "$4.58"
+}
+> db.movie.find({}).skip(10).limit(5).pretty()
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e2"),
+        "id" : 11,
+        "movie-name" : "Chronicles of Narnia: The Lion, the Witch and the Wardrobe, The",
+        "movie-gener" : "Adventure|Children|Fantasy",
+        "production-year" : 2002,
+        "budget" : "$7.56"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e3"),
+        "id" : 12,
+        "movie-name" : "Bad Luck Love",
+        "movie-gener" : "Crime|Drama",
+        "production-year" : 1993,
+        "budget" : "$2.90"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e4"),
+        "id" : 13,
+        "movie-name" : "Clan of the Cave Bear, The",
+        "movie-gener" : "Adventure|Drama|Fantasy",
+        "production-year" : 2009,
+        "budget" : "$0.35"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e5"),
+        "id" : 14,
+        "movie-name" : "Titicut Follies",
+        "movie-gener" : "Documentary|Drama",
+        "production-year" : 1987,
+        "budget" : "$9.77"
+}
+{
+        "_id" : ObjectId("623215d4e8bdf600291980e6"),
+        "id" : 15,
+        "movie-name" : "D3: The Mighty Ducks",
+        "movie-gener" : "Children|Comedy",
+        "production-year" : 1993,
+        "budget" : "$6.91"
+}

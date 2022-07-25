@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container{
+        display:flex;
+    margin-left: 120px;
+        margin-top: 50px;
+        
+    }
+
+    #container>div{
+       margin-right:10px;
+
+       box-shadow:rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   }
+   #container>div>div>p:nth-child(2){
+       text-decoration: line-through;
+   }
+</style>
+<body>
+   <div id=container>
+
+   </div>
+  
+</body>
+</html>
+<script>
+     var data = [
+    {
+        imgUrl:"https://preview.colorlib.com/theme/eiser/img/product/inspired-product/xi1.jpg.pagespeed.ic.mkSk-Af1ka.webp",
+        name:"LATEST MEN’S SNEAKER",
+        price:"$25.00",
+        strikedOffPrice:"$95.00"
+    },{
+        imgUrl:"https://preview.colorlib.com/theme/eiser/img/product/inspired-product/xi2.jpg.pagespeed.ic.uBrpABaJqp.webp",
+        name:"LATEST MEN’S SNEAKER",
+        price:"$35.00",
+        strikedOffPrice:"$100.00"
+    },{
+        imgUrl:"https://preview.colorlib.com/theme/eiser/img/product/inspired-product/xi3.jpg.pagespeed.ic.iO_cFEPy2K.webp",
+        name:"LATEST MEN’S SNEAKER",
+        price:"$35.00",
+        strikedOffPrice:"$100.00"
+    },
+    {
+        imgUrl:"https://preview.colorlib.com/theme/eiser/img/product/inspired-product/xi4.jpg.pagespeed.ic.kmiQW8I5wx.webp",
+        name:"LATEST MEN’S SNEAKER",
+        price:"$35.00",
+        strikedOffPrice:"$100.00"
+    }
+]
+
+
+     data.map(function (elem){
+         var maindiv=document.createElement('div');
+         var img=document.createElement('img');
+
+         img.setAttribute("src",elem.imgUrl);
+         var h4=document.createElement('h4');
+         h4.textContent=elem.name;
+
+         var smalldiv=document.createElement('div');
+         var price=document.createElement('p');
+         price.textContent=elem.price;
+         var strikedOffPrice=document.createElement('p');
+         strikedOffPrice.textContent=elem.strikedOffPrice;
+         smalldiv.append(price,strikedOffPrice);
+         smalldiv.style.display="flex";
+         smalldiv.style.justifyContent="space-around";
+
+          maindiv.append(img,h4,smalldiv);
+
+         document.getElementById("container").append(maindiv);
+     });
+</script>
